@@ -1,0 +1,28 @@
+.games{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.game{
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.game img{
+    width: 140px;
+    height: auto;
+    border-radius: 15%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.game img:hover{
+    filter: brightness(50%);
+}
+.game span{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

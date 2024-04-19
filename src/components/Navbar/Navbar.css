@@ -1,0 +1,147 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.sign{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  z-index: 10;
+  background-color: transparent;
+}
+.signDiv{
+  display: flex;
+  flex-direction: column;
+  background-color: #8e44ad;
+  border: 2px white solid;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+}
+.bi-x-circle{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  color: rgb(119, 8, 8);
+  cursor: pointer;
+}
+.bi-x-circle:hover{
+  color: white;
+}
+.title-sign{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  height: 50px;
+}
+.title-sign span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.lgn-spn, .rgt-spn{
+  margin-right: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.lgn-spn:hover, .rgt-spn:hover{
+  color: white;
+}
+.separador{
+  color: rgb(48, 48, 48);
+}
+.signin-div{
+  display: none;
+
+}
+.signup-div{
+  display: none;
+  
+}
+
+
+
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #8e44ad;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.logo-container img{
+    margin-left: 30px;
+}
+.nav{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cssbuttons-io-button {
+    margin-right: 30px;
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
