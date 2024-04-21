@@ -61,10 +61,16 @@ function Navbar() {
                         <i className="bi bi-x-circle" onClick={closeClick}></i>
                     </div>
                     <div className='signin-div' ref={inRef}>
-                        <span>login form</span>
+                        <h4>L O G I N</h4>
+                        <input className="input" type="text" placeholder='E-Mail' />
+                        <input className="input" type="password" placeholder='Senha' />
+                        <button className="button">Entrar</button>
                     </div>
                     <div className='signup-div' ref={upRef}>
-                        <span>register form</span>
+                        <h4>R E G I S T R O</h4>
+                        <input className="input" type="text" placeholder='E-Mail' />
+                        <input className="input" type="password" placeholder='Senha' />
+                        <button className="button">Criar conta</button>
                     </div>
                 </div>
             </div>
