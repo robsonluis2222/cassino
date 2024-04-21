@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 60px;
+    top: 0px;
     background: linear-gradient(to bottom, rgba(216, 3, 3, 0), #63267e), url('https://h.petrichor777.com/assets/home-bg.70172f80.png');
     background-size:contain; /* Ajusta o tamanho da imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem na div */
@@ -13,7 +13,7 @@
     z-index: 0;
 }
 .header-div img{
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .carrossel img{
     width: 380px;
