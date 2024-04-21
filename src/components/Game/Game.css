@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 .game{
-    width: 140px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 .game img{
-    width: 140px;
+    width: 100px;
     height: auto;
     border-radius: 15%;
     margin-bottom: 10px;
@@ -25,4 +25,5 @@
 .game span{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }

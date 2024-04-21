@@ -6,7 +6,6 @@
     top: 60px;
     background: linear-gradient(to bottom, rgba(216, 3, 3, 0), #63267e), url('https://h.petrichor777.com/assets/home-bg.70172f80.png');
     background-size:contain; /* Ajusta o tamanho da imagem para cobrir toda a div */
-
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-attachment: fixed; /* Fixa a imagem no lugar */
     min-height: 1150px;
@@ -15,9 +14,12 @@
 .header-div img{
     margin-top: 40px;
 }
+.carrossel{
+    margin-top: 30px;
+}
 .carrossel img{
-    width: 380px;
-    height: 180px;
+    width: 360px;
+    height: 160px;
     border-radius: 15px;
 }
 
