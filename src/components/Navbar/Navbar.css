@@ -82,6 +82,7 @@ h4{
   outline: none;
   border-radius: 15px;
   padding: 1em;
+  width: 180px;
   height: 10px;
   background-color: #ccc;
   box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
