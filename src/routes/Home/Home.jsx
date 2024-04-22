@@ -23,7 +23,7 @@ function Home(){
                         <Game name="Genie's 3" img="https://api.petrichor777.com/icon/10010.png"/>
                         <Game name="Buffalo Win" img="https://api.petrichor777.com/icon/10011.png"/>
                         <Game name="Lucky Piggy" img="https://api.petrichor777.com/icon/10012.png"/>
-                        <Game name="Ganesha Fortune" img="https://api.petrichor777.com/icon/10013.png"/>
+                        <Game name="Ganesha Fort" img="https://api.petrichor777.com/icon/10013.png"/>
                         <Game name="Icespace Great" img="https://api.petrichor777.com/icon/10014.png"/>
                         <Game name="Bikini Paradise" img="https://api.petrichor777.com/icon/10015.png"/>
                         <Game name="Midas Fortune" img="https://api.petrichor777.com/icon/10016.png"/>

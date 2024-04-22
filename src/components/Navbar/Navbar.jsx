@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './Navbar.css';
 
 function Navbar() {
@@ -7,6 +7,30 @@ function Navbar() {
     const registerRef = useRef(null);
     const inRef = useRef(null);
     const upRef = useRef(null);
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const emailChange = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const passwordChange = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const isLogged = async () => {
+        const urlBase = 'https://backendchat.000webhostapp.com/cassino/login.php?param1=' + email + '&param2=' + password;
+        const response = await fetch(urlBase);
+        const text = await response.text();
+        if (text === 'true') {
+            window.alert('logado com sucesso !')
+            setEmail('')
+            setPassword('')
+        } else {
+            window.alert('usuario ou senha invalidos !');
+        }
+    };
 
     const loginOptClick = () => {
         const lgn = loginRef.current;
@@ -62,9 +86,9 @@ function Navbar() {
                     </div>
                     <div className='signin-div' ref={inRef}>
                         <h4>L O G I N</h4>
-                        <input className="input" type="text" placeholder='E-Mail' />
-                        <input className="input" type="password" placeholder='Senha' />
-                        <button className="button">Entrar</button>
+                        <input className="input" type="text" placeholder='E-Mail' onChange={emailChange} />
+                        <input className="input" type="password" placeholder='Senha' onChange={passwordChange} />
+                        <button className="button" onClick={isLogged}>Entrar</button>
                     </div>
                     <div className='signup-div' ref={upRef}>
                         <h4>R E G I S T R O</h4>

@@ -4,6 +4,7 @@ import Home from './routes/Home/Home'
 import Convidar from './routes/Convidar/Convidar'
 import Conta from './routes/Conta/Conta'
 import Bonus from './routes/Bonus/Bonus'
+import Game1 from './routes/Game1/Game1'
 import {
   createBrowserRouter,
   RouterProvider,
