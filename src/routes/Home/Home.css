@@ -15,9 +15,11 @@
     margin-top: 40px;
 }
 .carrossel{
+    display: flex;
     margin-top: 30px;
 }
 .carrossel img{
+    display: flex;
     width: 360px;
     height: 160px;
     border-radius: 15px;
@@ -26,5 +28,8 @@
 .games{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }

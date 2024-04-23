@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import logo from '../../assets/logo.png';
 import './Navbar.css';
 
 function Navbar() {
@@ -143,7 +144,7 @@ function Navbar() {
             </div>
             <div className='navbar'>
                 <div className='logo-container'>
-                    <img src="https://via.placeholder.com/200x40" alt="logo" />
+                    <img src={logo} className="logo" alt="logo" />
                 </div>
                 <div className='nav'>
                     <button className="cssbuttons-io-button" id='register-btn' onClick={registerClick}>
