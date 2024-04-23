@@ -1,5 +1,69 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+.deposit-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  z-index: 10;
+  background-color: transparent;
+}
+.deposit-div{
+  display: flex;
+  flex-direction: column;
+  background-color: #8e44ad;
+  border: 2px white solid;
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  z-index: 10;
+}
+.title-deposit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.title-deposit span{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.title-dep{
+  font-weight: bold;
+  font-size: 23px;
+}
+.subtitle-dep{
+  font-size: 18px;
+}
+.options{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+.options span{
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 8px;
+  background-color: rgb(206, 107, 189);
+  border: 2px solid white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 70px;
+  cursor: pointer;
+}
+.options span:hover{
+  background-color: rgb(165, 68, 149);
+}
+
 .sign{
   display: none;
   align-items: center;
@@ -95,6 +159,12 @@ h4{
   transform: scale(1.05);
   box-shadow: 13px 13px 100px #969696,
              -13px -13px 100px #ffffff;
+}
+#deposit-btn{
+  display: none;
+}
+#register-btn{
+  display: flex;
 }
 .button {
   display: inline-block;
