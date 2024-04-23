@@ -29,6 +29,7 @@ function Home(){
                         <Game name="Bikini Paradise" img="https://api.petrichor777.com/icon/10015.png"/>
                         <Game name="Midas Fortune" img="https://api.petrichor777.com/icon/10016.png"/>
                         <Game name="Fortune Tree" img="https://api.petrichor777.com/icon/10017.png"/>
+                        <div className='copy'><span>Copyright &copy; Luxury777</span></div>
                     </div>
                     <Footer />
                 </div>
