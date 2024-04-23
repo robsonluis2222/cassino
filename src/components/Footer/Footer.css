@@ -1,0 +1,46 @@
+.footer{
+    display: flex;
+
+    width: 100vw;
+    height: 45px;
+    border-top: 2px solid white;
+    background-color: #6D214F;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+.jogos{
+    display: 	flex;
+    width: 33.3vh;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.jogos:hover{
+    background-color: #B33771;
+}
+.ganhos{
+    display: 	flex;
+    width: 33.3vh;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ganhos:hover{
+    background-color: #B33771;
+}
+.conta{
+    display: 	flex;
+    width: 33.3vh;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.conta:hover{
+    background-color: #B33771;
+}
+i{
+    margin-right: 8px;
+    font-size: 25px;
+}

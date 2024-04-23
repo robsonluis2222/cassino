@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 import Game from '../../components/Game/Game'
 import './Home.css'
 
@@ -29,6 +30,7 @@ function Home(){
                         <Game name="Midas Fortune" img="https://api.petrichor777.com/icon/10016.png"/>
                         <Game name="Fortune Tree" img="https://api.petrichor777.com/icon/10017.png"/>
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>
