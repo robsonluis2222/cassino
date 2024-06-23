@@ -14,7 +14,7 @@ function Home(){
                         <img src="https://p.petrichor777.com/game/PC/Banner-VIP1.png" alt="" />
                     </div>
                     <div className='games'>
-                        <Game name="Fortune Tiger" img="https://api.petrichor777.com/icon/10002.png"/>
+                        <Game name="Fortune Tiger" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487744701-Fortune_Tiger.png"/>
                         <Game name="Fortune Mouse" img="https://api.petrichor777.com/icon/10005.png"/>
                         <Game name="Dragon Tiger" img="https://api.petrichor777.com/icon/10006.png"/>
                         <Game name="Fortune Ox" img="https://api.petrichor777.com/icon/10003.png"/>
