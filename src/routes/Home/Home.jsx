@@ -15,20 +15,20 @@ function Home(){
                     </div>
                     <div className='games'>
                         <Game name="Fortune Tiger" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487744701-Fortune_Tiger.png"/>
-                        <Game name="Fortune Mouse" img="https://api.petrichor777.com/icon/10005.png"/>
-                        <Game name="Dragon Tiger" img="https://api.petrichor777.com/icon/10006.png"/>
-                        <Game name="Fortune Ox" img="https://api.petrichor777.com/icon/10003.png"/>
-                        <Game name="Dragon Hatch" img="https://api.petrichor777.com/icon/10007.png"/>
-                        <Game name="Ganesha Gold" img="https://api.petrichor777.com/icon/10008.png"/>
-                        <Game name="Jungle Delight" img="https://api.petrichor777.com/icon/10009.png"/>
-                        <Game name="Genie's 3" img="https://api.petrichor777.com/icon/10010.png"/>
-                        <Game name="Buffalo Win" img="https://api.petrichor777.com/icon/10011.png"/>
-                        <Game name="Lucky Piggy" img="https://api.petrichor777.com/icon/10012.png"/>
-                        <Game name="Ganesha Fort" img="https://api.petrichor777.com/icon/10013.png"/>
-                        <Game name="Icespace Great" img="https://api.petrichor777.com/icon/10014.png"/>
-                        <Game name="Bikini Paradise" img="https://api.petrichor777.com/icon/10015.png"/>
-                        <Game name="Midas Fortune" img="https://api.petrichor777.com/icon/10016.png"/>
-                        <Game name="Fortune Tree" img="https://api.petrichor777.com/icon/10017.png"/>
+                        <Game name="Fortune Mouse" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487693545-Fortune_Mouse.png"/>
+                        <Game name="Dragon Tiger" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/luaujogo/img/1707835930523-fortune-dragon_web-banner_500_500_en_nolabel.jpg"/>
+                        <Game name="Fortune Ox" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487708333-Fortune_Ox.png"/>
+                        <Game name="Dragon Hatch" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487569741-Dragon_Hatch.png"/>
+                        <Game name="Ganesha Gold" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487558043-Double_Fortune.png"/>
+                        <Game name="Mafia Mayhem" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/hiperbetgm/img/1702564477276-mafia-mayhem_web-banner_500_500_en.png"/>
+                        <Game name="Forge Wealth" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/preciosa777gd/img/1700722434115-forge-of-wealth_web-banner_500_500_en.png"/>
+                        <Game name="Wild Heist" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1699864526002-wild-heist-cashout_web-banner_en.jpg"/>
+                        <Game name="Suggar Rush" img="https://api-br1.pragmaticplay.net/game_pic/square/200/vs20sugarrush.png"/>
+                        <Game name="Zeus V Hades" img="https://api-br1.pragmaticplay.net/game_pic/square/200/vs15godsofwar.png"/>
+                        <Game name="Big Bass" img="https://api-br1.pragmaticplay.net/game_pic/square/200/vs10bbextreme.png"/>
+                        <Game name="Ninja Raccoon" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698912049017-ninja-raccoon-frenzy_web-banner_en.png"/>
+                        <Game name="Fruit Candy" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1695275426287-fruity-candy_web-banner_500_500_en.jpg"/>
+                        <Game name="Midas Fortune" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698488219423-Midas_Fortune.png"/>
                         <div className='copy'><span>Copyright &copy; Luxury777</span></div>
                     </div>
                     <Footer />
