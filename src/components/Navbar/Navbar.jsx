@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import logo from '../../assets/logo.png';
+import {api} from '../../provider'
 import './Navbar.css';
 
 function Navbar() {
@@ -24,6 +25,28 @@ function Navbar() {
             console.log("não ta logado");
         }
     }, []);
+
+    const runPayment = () => {
+        api.post('/', {
+            "requestNumber": "123456",
+  "dueDate": "2024-07-10",
+  "amount": 200.00,
+  "discountAmount": 0.0,
+  "client": {
+      "name":"Robson Luis Leite Junior",
+      "document":"133.166.609-09",
+      "phoneNumber": "47996579387",
+      "email": "robsonluis2222@gmail.com"
+  }
+        })
+        .then(response => {
+            console.log(response.data)
+        })
+        .catch(error => {
+            console.log("erro: " + error)
+        })
+
+    }
 
     const closeDepClick = () => {
         depositoDivRef.current.style.display = 'none';
@@ -110,7 +133,7 @@ function Navbar() {
                         <span className='subtitle-dep'>Selecione o valor:</span>
                     </div>
                     <div className='options'>
-                        <span>R$ 20,00</span>
+                        <span onClick={runPayment}>R$ 20,00</span>
                         <span>R$ 50,00</span>
                         <span>R$ 75,00</span>
                         <span>R$ 100,00</span>

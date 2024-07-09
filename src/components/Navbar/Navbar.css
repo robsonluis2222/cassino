@@ -132,7 +132,7 @@
   width: 100%;
 }
 .signup-div{
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -279,7 +279,7 @@ h4{
     padding-right: 3.3em;
     cursor: pointer;
   }
-  
+
   .cssbuttons-io-button .icon {
     background: white;
     margin-left: 1em;
@@ -294,22 +294,21 @@ h4{
     right: 0.3em;
     transition: all 0.3s;
   }
-  
+
   .cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
   }
-  
+
   .cssbuttons-io-button .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
     color: #7b52b9;
   }
-  
+
   .cssbuttons-io-button:hover .icon svg {
     transform: translateX(0.1em);
   }
-  
+
   .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
   }
-  
