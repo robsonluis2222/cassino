@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   border-radius: 15px;
   transform: translate(-50%, -50%);
@@ -312,3 +312,16 @@ h4{
   .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
   }
+
+.qr-code-show-div{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 18px;
+  gap: 8px;
+}
+.img-qr-code{
+  display: flex ;
+  width: 200px;
+}

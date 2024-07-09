@@ -10,9 +10,14 @@ function Navbar() {
     const inRef = useRef(null);
     const upRef = useRef(null);
     const depositoDivRef = useRef(null);
+    const referenciaCode = useRef(null);
+    const imagemCode = useRef(null);
+    const inputRef = useRef(null);
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [base64String, setBase64String] = useState('');
+    const [paymentCode, setPaymentCode] = useState('');
 
     useEffect(() => {
         const hasAccount = localStorage.getItem('isUser');
@@ -26,11 +31,17 @@ function Navbar() {
         }
     }, []);
 
-    const runPayment = () => {
+    const copyCode = () => {
+        inputRef.current.select();
+        document.execCommand('copy');
+        alert("QR CODE COPIADO !")
+    }
+
+    const runPayment = (valorPix) => {
         api.post('/', {
             "requestNumber": "1186",
             "dueDate": "2024-07-10",
-            "amount": 200.00,
+            "amount": valorPix,
             "discountAmount": 0.0,
             "client": {
                 "name":"Robson Luis Leite Junior",
@@ -40,6 +51,10 @@ function Navbar() {
             }
         })
         .then(response => {
+            setBase64String(response.data.paymentCodeBase64)
+            setPaymentCode(response.data.paymentCode)
+            referenciaCode.current.style.height = "550px"
+            imagemCode.current.style.display = "flex"
             console.log(response.data)
         })
         .catch(error => {
@@ -126,19 +141,24 @@ function Navbar() {
     return (
         <div className='container'>
             <div className='deposit-container' ref={depositoDivRef}>
-                <div className='deposit-div'>
+                <div className='deposit-div' ref={referenciaCode}>
                     <i className="bi bi-x-circle" onClick={closeDepClick}></i>
                     <div className='title-deposit'>
                         <span className='title-dep'>Depósito</span>
                         <span className='subtitle-dep'>Selecione o valor:</span>
                     </div>
                     <div className='options'>
-                        <span onClick={runPayment}>R$ 20,00</span>
-                        <span>R$ 50,00</span>
-                        <span>R$ 75,00</span>
-                        <span>R$ 100,00</span>
-                        <span>R$ 150,00</span>
-                        <span>R$ 200,00</span>
+                        <span onClick={() => runPayment(20.0)}>R$ 20,00</span>
+                        <span onClick={() => runPayment(50.0)}>R$ 50,00</span>
+                        <span onClick={() => runPayment(75.0)}>R$ 75,00</span>
+                        <span onClick={() => runPayment(100.0)}>R$ 100,00</span>
+                        <span onClick={() => runPayment(150.0)}>R$ 150,00</span>
+                        <span onClick={() => runPayment(200.0)}>R$ 200,00</span>
+                    </div>
+                    <div className='qr-code-show-div' ref={imagemCode}>
+                        <img className='img-qr-code' src={`data:image/png;base64,${base64String}`} alt="Imagem Base64" />
+                        <input type="text" value={paymentCode} ref={inputRef} />
+                        <button onClick={copyCode}>Copiar QR CODE</button>
                     </div>
                 </div>
             </div>
