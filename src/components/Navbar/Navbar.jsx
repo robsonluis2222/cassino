@@ -16,6 +16,8 @@ function Navbar() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [newEmail, setNewEmail] = useState('');
+    const [newPassword, setNewPassword] = useState('');
     const [base64String, setBase64String] = useState('');
     const [paymentCode, setPaymentCode] = useState('');
 
@@ -30,6 +32,30 @@ function Navbar() {
             console.log("não ta logado");
         }
     }, []);
+
+    const isRegistred = async () => {
+        const urlBase = 'https://clicklucro.000webhostapp.com/registro.php?param1=' + newEmail + '&param2=' + newPassword;
+        const response = await fetch(urlBase);
+        const text = await response.text();
+        if (text === 'true') {
+            window.alert('Conta criada com sucesso !');
+            localStorage.setItem('isUser', 'true');
+            console.log(localStorage.getItem('isUser'));
+            const signDiv = signRef.current;
+            signDiv.style.display = 'none';
+            window.location.reload();
+        } else {
+            window.alert('E-mail ou senha invalidos !');
+        }
+    }
+
+    const novaSenha = (e) => {
+        setNewPassword(e.target.value)
+    }
+
+    const novoEmail = (e) => {
+        setNewEmail(e.target.value)
+    }
 
     const copyCode = () => {
         inputRef.current.select();
@@ -76,18 +102,18 @@ function Navbar() {
     };
 
     const isLogged = async () => {
-        const urlBase = 'https://backendchat.000webhostapp.com/cassino/login.php?param1=' + email + '&param2=' + password;
+        const urlBase = 'https://clicklucro.000webhostapp.com/login.php?param1=' + email + '&param2=' + password;
         const response = await fetch(urlBase);
         const text = await response.text();
         if (text === 'true') {
-            window.alert('logado com sucesso !');
+            window.alert('Seja bem vindo !');
             localStorage.setItem('isUser', 'true');
             console.log(localStorage.getItem('isUser'));
             const signDiv = signRef.current;
             signDiv.style.display = 'none';
             window.location.reload();
         } else {
-            window.alert('usuario ou senha invalidos !');
+            window.alert('E-mail ou senha invalidos !');
         }
     };
 
@@ -179,9 +205,9 @@ function Navbar() {
                     </div>
                     <div className='signup-div' ref={upRef}>
                         <h4>R E G I S T R O</h4>
-                        <input className="input" type="text" placeholder='E-Mail' />
-                        <input className="input" type="password" placeholder='Senha' />
-                        <button className="button">Criar conta</button>
+                        <input className="input" type="text" placeholder='E-Mail' onChange={novoEmail} />
+                        <input className="input" type="password" placeholder='Senha' onChange={novaSenha} />
+                        <button className="button" onClick={isRegistred}>Criar conta</button>
                     </div>
                 </div>
             </div>
