@@ -28,16 +28,16 @@ function Navbar() {
 
     const runPayment = () => {
         api.post('/', {
-            "requestNumber": "123456",
-  "dueDate": "2024-07-10",
-  "amount": 200.00,
-  "discountAmount": 0.0,
-  "client": {
-      "name":"Robson Luis Leite Junior",
-      "document":"133.166.609-09",
-      "phoneNumber": "47996579387",
-      "email": "robsonluis2222@gmail.com"
-  }
+            "requestNumber": "1186",
+            "dueDate": "2024-07-10",
+            "amount": 200.00,
+            "discountAmount": 0.0,
+            "client": {
+                "name":"Robson Luis Leite Junior",
+                "document":"133.166.609-09",
+                "phoneNumber": "47996579387",
+                "email": "robsonluis2222@gmail.com"
+            }
         })
         .then(response => {
             console.log(response.data)
