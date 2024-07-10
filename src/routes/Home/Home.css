@@ -1,13 +1,16 @@
+
+
 .header-div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 0;
     position: relative;
     top: 60px;
     background: linear-gradient(to bottom, rgba(216, 3, 3, 0), #63267e), url('https://www.pgsoft.com/uploads/Games/Images/ae11a071-f359-49a2-95e5-c07fa9b3e1e2.jpg');
-    background-size:contain; /* Ajusta o tamanho da imagem para cobrir toda a div */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-attachment: fixed !important; /* Fixa a imagem no lugar */
+    background-size:contain !important; /* Ajusta o tamanho da imagem para cobrir toda a div */
+    background-repeat: no-repeat !important; /* Evita a repetição da imagem */
+    background-attachment:fixed !important; /* Fixa a imagem no lugar */
     min-height: 1150px;
     z-index: 0;
 }

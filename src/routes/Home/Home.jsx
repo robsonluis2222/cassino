@@ -11,7 +11,7 @@ function Home(){
             <div className='container'>
                 <div className='header-div'>
                     <div className='carrossel'>
-                        <img src="https://i.imgur.com/7tMmNrV.jpeg" alt="" />
+                        <img src="https://i.imgur.com/Dj4NaTy.jpeg" alt="" />
                     </div>
                     <div className='games'>
                         <Game name="Fortune Tiger" img="https://laranja9.s3.sa-east-1.amazonaws.com/dev/laranja7/1698487744701-Fortune_Tiger.png"/>
